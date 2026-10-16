@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pelayanan — Village services · KIDANG BANG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/pages.css"></head>
+<body data-page="pelayanan"><header id="nav"></header><main class="wrap">
+<section class="ph"><span class="lbl">Service counter workspace</span><h1 class="h1">PELAYANAN<span class="mk">.</span></h1><p>Prepare administrative letters. <span class="demo">Fictional data only · no database</span></p></section>
+<div class="sum"><div><b>4</b><span class="lbl">Pending (demo)</span></div><div><b>9</b><span class="lbl">Processed today (demo)</span></div><div><b>5</b><span class="lbl">Service types</span></div><div><b>0</b><span class="lbl">Real records</span></div></div>
+<!-- SECURITY NOTE: Authentication, server-side authorization and database security MUST be implemented before production use. This frontend is never a security boundary. Each .ws instance keeps its own state in its own DOM (no shared global form state), so several CS users/documents can be handled independently later. -->
+<section class="ws" id="ws"><form id="wf" novalidate>
+<div class="fld"><label for="sv">Service type</label><select id="sv"></select></div>
+<div class="fld"><label for="nik">Citizen NIK (16 digits, fictional)</label><div style="display:flex;gap:8px"><input id="nik" inputmode="numeric" maxlength="16" autocomplete="off" style="flex:1"><button class="btn" type="button" id="lk">Look up</button></div><span class="er" id="en" role="alert"></span><span class="lbl">Demo NIKs: 9900000000000001 · 9900000000000002 · 9900000000000003</span></div>
+<div class="cz" id="cz" hidden></div><div id="ex"></div>
+<div class="fr"><button class="btn p" type="button" id="pp">Print preview</button><button class="btn" type="button" id="cl">Clear</button><button class="btn" type="reset" id="rs">Reset form</button></div></form>
+<article class="prev" id="pv" aria-live="polite" aria-label="Document preview"></article></section>
+<h2 class="h2" style="font-size:clamp(28px,4vw,48px)">Recently processed <span class="demo">Demo</span></h2>
+<div id="rc" style="margin-bottom:80px"></div></main>
+<script src="assets/js/main.js"></script><script src="assets/js/pages.js"></script></body></html>
